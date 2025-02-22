@@ -2,4 +2,5 @@
 
 interface Env {
 	PRODUCTION: string;
+	DO: DurableObjectNamespace<import('./src/durableObject').Do>;
 }
