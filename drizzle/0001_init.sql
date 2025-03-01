@@ -1,0 +1,1 @@
+ALTER TABLE `posts_table` ADD `hash` text NOT NULL;

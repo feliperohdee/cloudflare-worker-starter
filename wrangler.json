@@ -20,6 +20,11 @@
 	"observability": {
 		"enabled": true
 	},
+	"rules": [{
+        "fallthrough": true,
+        "globs": ["**/*.sql"],
+        "type": "Text"
+    }],
 	"vars": {
 		"PRODUCTION": "true"
 	}
