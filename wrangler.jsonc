@@ -1,6 +1,9 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "cloudflare-worker-starter",
+	"browser": {
+		"binding": "BROWSER"
+	},
 	"compatibility_date": "2025-02-04",
 	"compatibility_flags": ["nodejs_compat"],
 	"durable_objects": {
@@ -8,6 +11,10 @@
 			{
 				"name": "DO",
 				"class_name": "DurableObject"
+			},
+			{
+				"name": "RENDER_COORDINATOR",
+				"class_name": "RenderCoordinator"
 			}
 		]
 	},
@@ -15,7 +22,7 @@
 	"migrations": [
 		{
 			"tag": "v1",
-			"new_sqlite_classes": ["DurableObject"]
+			"new_sqlite_classes": ["DurableObject", "RenderCoordinator"]
 		}
 	],
 	"assets": {

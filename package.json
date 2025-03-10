@@ -13,6 +13,7 @@
 		"test": "vitest"
 	},
 	"dependencies": {
+		"@cloudflare/puppeteer": "^0.0.14",
 		"@radix-ui/react-slot": "^1.1.2",
 		"lodash": "^4.17.21",
 		"react": "^19.0.0",

@@ -2,6 +2,8 @@
 
 interface Env {
 	PRODUCTION: string;
-	DO: DurableObjectNamespace<import('./worker/index').DurableObject>;
+	DO: DurableObjectNamespace<import("./worker/index").DurableObject>;
+	RENDER_COORDINATOR: DurableObjectNamespace<import("./worker/index").RenderCoordinator>;
+	BROWSER: Fetcher;
 	ASSETS: Fetcher;
 }
